@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		p {
+			width: 10%;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+		<!-- méthode 1 -->
+	<!-- <p onclick="alert('bravo !');">cliquez-moi</p> -->
+
+	<p >Cliquez-moi</p>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+		let p1 = document.querySelector('p');
+
+		p1.addEventListener('mouseover', Fonction1);
+		p1.addEventListener('mousedown', Fonction2);
+		p1.addEventListener('mouseout', Fonction3);
+
+
+		function Fonction1() {
+
+			// this.style.color = ('#3F3075');
+			this.style.backgroundColor = ('#D8D0F5');
+
+			};
+
+		function Fonction2() {
+
+			this.textContent = 'Bravo';			
+
+			};
+
+		function Fonction3() {
+
+			// this.style.color = ('#3F3075');
+			this.style.backgroundColor = ('');
+
+
+			};
+
+
+			//méthode 2
+		// document.querySelector('p').onclick = function() {
+
+		// 	this.textContent = 'Bravo';
+		// 	this.style.color = ('#3F3075');
+		// 	this.style.backgroundColor = ('#D8D0F5');
+
+		// };
+
+		
+	</script>
+	
+</body>
+</html>
